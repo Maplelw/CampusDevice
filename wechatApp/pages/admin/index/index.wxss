@@ -1,0 +1,52 @@
+.toUser {
+    color: rgba(18, 150, 219, 1);
+    position: fixed;
+    top: 10rpx;
+    right: 20rpx;
+    font-size: 32rpx;
+}
+.top {
+    margin-top: 50rpx;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    margin-top: 40rpx;
+}
+
+.mark image {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 10rpx 0 40rpx;
+}
+.mark text {
+    font-size: 35rpx;
+}
+
+.choice {
+    margin: 80rpx 0; 
+    display: flex;
+    justify-content: center;
+}
+
+.choice .eachChoice {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 35rpx;
+    justify-content: center;
+    align-items: center;
+    width: 200rpx;
+    height: 175rpx;
+}
+
+.choice .eachChoice image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 10rpx;
+}
+
+.down {
+    margin-top: 150rpx;
+}

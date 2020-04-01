@@ -1,0 +1,38 @@
+page {
+    background-color: rgba(244, 244, 244, 1)
+}
+
+.all {
+    width: 100%;
+}
+
+.message {
+    padding-top: 20rpx;
+    padding-right: 20rpx;
+    border-radius: 5%;
+    background-color: white;
+    width: 95%;
+    margin: 20rpx auto;
+}
+
+.message .topic {
+    width: 15rpx;
+    height: 15rpx;
+    background-color: #89AFD4;
+    border-radius: 50%;
+    float: right;
+}
+
+.message .content {
+    font-size: 32rpx;
+    margin: 20rpx 40rpx;
+    white-space: pre-wrap;
+    margin-top: 20rpx;
+}
+
+.message .time {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: #aaaaaa;
+    margin-left: 40rpx;
+}

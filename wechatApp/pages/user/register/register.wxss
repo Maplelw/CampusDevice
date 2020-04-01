@@ -1,0 +1,81 @@
+.inputs {
+    margin-top: 30rpx;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+}
+
+radio {
+    width: 200rpx;
+}
+
+.placeholder {
+    font-size: 32rpx;
+    color: #818181; 
+}
+
+.inputs text {
+    width: 180rpx;
+    margin-left: 50rpx;
+    font-size: 32rpx;
+}
+
+.inputs input {
+    height: 60rpx;
+    width: 480rpx;
+    border-bottom: 2rpx solid #dfdfdf;
+    font-size: 32rpx;
+}
+/* 院系专业多加一行 */
+.inputs .specialSpecialty {
+    height: 60rpx;
+    width: 480rpx;
+    border-bottom: 2rpx solid #dfdfdf;
+    font-size: 32rpx;
+    color: #808080
+}
+
+picker {
+    height: 60rpx;
+    width: 480rpx;
+    border-bottom: 2rpx solid #dfdfdf;
+    font-size: 32rpx;
+    color: #808080
+}
+
+.area {
+    margin-top: 50rpx;
+    display: flex;
+}
+
+.area text {
+    width: 180rpx;
+    margin-left: 50rpx;
+    font-size: 32rpx;
+}
+
+.area textarea {
+    width: 480rpx;
+    height: 300rpx;
+    border: 2rpx solid #dfdfdf;
+    font-size: 32rpx;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 40rpx;
+    width: 100%;
+}
+
+.bottom button {
+    background-color: #89afd4;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+.errorMsg {
+    font-size: 32rpx;
+    color: #FA3436;
+    margin: 50rpx;
+}

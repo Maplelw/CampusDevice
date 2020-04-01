@@ -1,0 +1,7 @@
+<view class="all">
+    <view class="message" wx:for="{{messages}}" wx:key="{{index}}">
+        <view wx:if="{{index < unReadNum}}" class="topic"></view>
+        <view class="content">{{item.m_content}}</view>
+        <view class="time">{{item.m_date}}</view>
+    </view>
+</view>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--这里的name自定义、尽量与Action中的name相同，method定位到所处action中的class的具体方法，result的name为return 后返回的方法名称-->
+    <package name="default" extends="struts-default">
+        <action name="main" class="action.MainAction" method="execute">
+            <result name="error">login.jsp</result>
+            <result name="success">PersonalData.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="detail" class="action.ReserveAction" method="getReservationDetail">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="detailbycd" class="action.ReserveAction" method="getReservationDetailBycd">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="detailbyst" class="action.ReserveAction" method="getReservationDetailByst">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="findrsrv" class="action.ReserveAction" method="getReservation">
+            <result name="success">findReservation.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="agreersrv" class="action.ReserveAction" method="AgreeReservation">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="editrsrv" class="action.ReserveAction" method="editReservation">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="refusersrv" class="action.ReserveAction" method="RefuseReservation">
+            <result name="success">reservationDetails.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="feedback" class="action.FeedBackAction" method="GetFeedback">
+            <result name="success">getFeedBack.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="returned" class="action.ReturnAction" method="getTobereturned">
+            <result name="success">deviceReturn.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="return" class="action.ReturnAction" method="confirmReturn">
+            <result name="success">deviceReturn.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="device" class="action.DeviceAction" method="getDevices">
+            <result name="success">devices.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="enterdevice" class="action.DeviceAction" method="enterDevice">
+            <result name="success">devices.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="changedevice" class="action.DeviceAction" method="changeDevice">
+            <result name="success">devices.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="upload" class="action.UploadAction" method="execute">
+            <result name="success">devices.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="overdue" class="action.OverdueAction" method="getOverDue">
+            <result name="success">OverDue.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="reply" class="action.FeedBackAction" method="respondToUserFeedback">
+            <result name="success">getFeedBack.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="download" class="action.ExportAction" method="export">
+            <result name = "success" type="stream">
+                <!--固定excel用xlsx格式-->
+                <param name="contentType">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">attachment;filename=${fileName}</param>
+                <param name="bufferSize">4096</param>
+            </result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="changepassword" class="action.EditPersonalDataAction" method="changePassword">
+            <result name="success">PersonalData.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="grant" class="action.GrantAction" method="getUsers">
+            <result name="success">grant.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="forgetpwd" class="action.EditPersonalDataAction" method="forgetPassword">
+            <result name="success">login.jsp</result>
+            <result name="error">forgetPassword.jsp</result>
+            <result name="404">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="grantUser" class="action.GrantAction" method="grantUser">
+            <result name="success">grant.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="edit" class="action.EditPersonalDataAction" method="Edit">
+            <result name="success">PersonalData.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="login">login.jsp</result>
+        </action>
+    </package>
+    <constant name="struts.multipart.saveDir" value="/tmp"></constant>
+</struts>

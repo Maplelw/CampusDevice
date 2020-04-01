@@ -1,0 +1,58 @@
+<!-- 头部选项 -->
+<view class="header">
+    <text bindtap="toIng" style="color:{{ingColor}}">正在申请</text>
+    <text bindtap="toDone" style="color:{{doneColor}}">已完成</text>
+</view>
+<!-- 正在处理 -->
+<view wx:if="{{choice === 'ing'}}">
+    <view class="all" wx:for="{{reservationIng}}" wx:key="{{index}}">
+        <view class="top">
+            <view>
+                <text>预约日期:</text>
+                <text>{{item.r_reservationDate}}</text>
+                <text wx:if="{{item.r_state === 0}}" class="ing">正在处理</text>
+                <text wx:elif="{{item.r_state === 2}}" class="discuss">协商处理</text>
+                <text wx:elif="{{item.r_state === 3}}" class="discuss">同意协商修改</text>
+            </view>
+        </view>
+        <view class="down">
+            <view>{{item.d_name}}({{item.d_no}})</view>
+            <view>
+                <text>借用日期</text>
+                <text>{{item.r_startDate}} -- {{item.r_returnDate}}</text>
+            </view>
+        </view>
+        <view class="feedback">
+            <text wx:if="{{item.r_state === 2 || item.r_state === 3}}">协商原因：{{item.r_feedBack}}</text>
+        </view>
+        <view class="cancel">
+            <text wx:if="{{item.r_state === 2}}" bindtap="agree" data-index="{{index}}">同意修改</text>
+            <text bindtap="cancel" data-index="{{index}}">取消预约</text>
+        </view>
+    </view>
+</view>
+<!-- 已完成 -->
+<view wx:else>
+    <view class="all" wx:for="{{reservationDone}}" wx:key="{{index}}">
+        <view class="top">
+            <text>预约日期:</text>
+            <text>{{item.r_reservationDate}}</text>
+            <text wx:if="{{item.r_state === -1}}" class="fail">预约失败</text>
+            <text wx:elif="{{item.r_state === 1}}" class="success">预约成功</text>
+            <text wx:else class="cancelReserve">取消预约</text>
+        </view>
+        <view class="down">
+            <view>{{item.d_name}}({{item.d_no}})</view>
+            <view>
+                <text>借用日期</text>
+                <text>{{item.r_startDate}} -- {{item.r_returnDate}}</text>
+            </view>
+        </view>
+        <view class="cancel">
+                <text bindtap="reserveElse" data-index="{{index}}">预约其他设备</text>
+        </view>   
+        <view class="feedback">
+            <text wx:if="{{item.r_state === -1}}">预约失败原因：{{item.r_feedBack}}</text>
+        </view>
+    </view>
+</view>

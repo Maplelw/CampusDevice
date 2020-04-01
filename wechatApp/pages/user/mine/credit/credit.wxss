@@ -1,0 +1,149 @@
+page {
+    background-color: rgb(244, 244, 244)
+}
+
+.header {
+    background-color: #fff;
+    height: 300rpx;
+    width: 100%;
+    border-top: 25rpx solid #eee;
+}
+
+.header .topic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .topic text{
+    margin-top: 40rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+}
+
+.header .score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid {
+    margin: 20rpx 20rpx 0 20rpx;
+    font-size: 42rpx;
+    color: #3E606F;
+    font-weight: 500;
+}
+
+.all {
+    background-color: #fff;
+    margin-top: 25rpx;
+    width: 95%;
+    margin: 20rpx auto;
+    border-radius: 4%;
+}
+
+.all .top {
+    padding: 20rpx;
+    border-bottom: 4rpx solid rgb(244, 244, 244);
+}
+
+.all .top text {
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}
+
+.all .top .currentScore {
+    color: #888;
+    float:right;
+    line-height:52rpx
+}
+
+
+.all .down {
+    padding: 20rpx 40rpx 10rpx 40rpx;
+    border-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.all .down .changeReason {
+    width: 90%;
+}
+
+.all .down text {
+    font-size: 32rpx;
+    margin: 5rpx;
+}
+
+.all .down .changeScore {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20rpx;
+    width: 10%;
+}
+
+.all .changeScore .add {
+    color: #89AFD4;
+}
+
+.all .changeScore .minus {
+    color: red;
+}
+
+/* 规则弹窗 */
+.window {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window .windowContent {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 32rpx;
+    border-radius: 5%;
+    color: #666
+}
+
+.window .windowContent .icon {
+    width: 100%;
+    height: 50rpx;
+}
+
+.window .windowContent .icon image {
+    float: right;
+    margin-top: 15rpx;
+    margin-right: 20rpx;
+    background-color: white;
+    width: 43rpx;
+    height: 43rpx;
+    
+}
+.window .windowContent .creditRule {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 60rpx;
+}
+
+.window .windowContent .creditRule .content{
+    width: 90%
+}
+
+.window .windowContent .creditRule .add{
+    text-align: center;
+    color: #89AFD4
+}
+
+.window .windowContent .creditRule .minus{
+    text-align: center;
+    color: red
+}

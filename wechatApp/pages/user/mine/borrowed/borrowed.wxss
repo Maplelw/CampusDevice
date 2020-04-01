@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 25rpx solid #eee;
+    border-top: 4rpx solid rgb(244, 244, 244);
+}
+
+.header text {
+    margin: 0 50rpx;
+    color: #aaa;
+}
+
+.top {
+    padding: 20rpx;
+    border-bottom: 2rpx solid #eee;
+}
+
+.top text {
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}
+
+.top .ing {
+    color: #89afd4;
+    float: right;
+    line-height: 52rpx;
+}
+
+.top .overdue {
+    color: red;
+    float: right;
+    line-height: 52rpx;
+}
+
+.top .done {
+    color: #aaa;
+    float: right;
+    line-height: 52rpx;
+}
+
+.down {
+    padding: 20rpx 40rpx 10rpx 40rpx;
+}
+
+.down text {
+    font-size: 32rpx;
+    color: #aaa;
+    margin: 5rpx;
+}
+
+.cancel {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20rpx;
+}
+
+.cancel .QRCode {
+    font-size: 30rpx;
+    color: #89afd4;
+    border: 4rpx solid #89afd4;
+    padding: 12rpx 25rpx;
+}
+
+.cancel .uncommented {
+    font-size: 30rpx;
+    color: #89afd4;
+    border: 4rpx solid #89afd4;
+    padding: 12rpx 25rpx;
+}
+
+.cancel .commented {
+    font-size: 30rpx;
+    color: #888;
+    border: 4rpx solid #aaa;
+    padding: 12rpx 25rpx;
+}
+
+/* 弹窗 */
+.window {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.window .windowContent .icon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.window .windowContent .icon icon {
+    margin-bottom: 10rpx;
+}
+
+
+.window .windowContent image {
+    width: 500rpx;
+    height: 500rpx;
+    background-color: white;
+    border-radius: 10%;
+}
+

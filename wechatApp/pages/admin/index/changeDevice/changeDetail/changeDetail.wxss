@@ -1,0 +1,129 @@
+page {
+    background-color: rgba(244, 244, 244, 0.5);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 50rpx;
+    align-items: center;
+    background-color: white;
+    border-top: 4rpx solid #eee;
+}
+
+.top .device_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top image {
+    width: 120rpx;
+    height: 100rpx;
+    margin-right: 20rpx;
+}
+
+.top .state {
+    color: #1897B9;
+    width: 100rpx;
+}
+
+.deviceInfo {
+    margin-top: 35rpx;
+}
+
+.deviceInfo .piece {
+    margin: 0rpx 20rpx;
+    padding: 0 40rpx;
+    font-size: 32rpx;
+    line-height: 90rpx;
+    background-color: white;
+}
+
+.deviceInfo .topic {
+    color: #888;
+
+}
+
+.deviceInfo .content {
+    float: right;
+}
+
+.deviceInfo .icon {
+    float: right;
+    color: #ddd ;
+    margin-left: 20rpx;
+    font-size: 40rpx;
+}
+
+/* 底部按钮 */
+.bottomButton {
+    margin-top: 40rpx; 
+    width: 100%;
+}
+
+.bottomButton button {
+    width: 80%;
+    font-size: 36rpx;
+    margin: 40rpx auto;
+    background-color: #89AFD4;
+    color: white;
+}
+
+/* 弹窗 */
+.window {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window .windowContent {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.window .windowContent .topic {
+    background-color: rgba(244, 244, 244, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 20rpx;
+    font-size: 36rpx;
+}
+
+.window .windowContent input{
+    margin: 40rpx auto;
+    width: 80%;
+    background-color: rgba(244, 244, 244, 0.8);
+    padding: 20rpx;
+    font-size: 35rpx;
+}
+
+.window .windowContent .radio-group{
+    margin: 20rpx 40rpx;
+    font-size: 35rpx;
+}
+
+.window .windowContent .radio-group radio{
+    margin: 0 40rpx;
+}
+
+.window .windowContent .buttons2 {
+    display: flex;
+    justify-content: center;
+    padding: 20rpx 0;
+}
+
+.window .windowContent .buttons2 button {
+    width: 200rpx;
+    height: 80rpx;
+    font-size: 35rpx;
+}

@@ -1,0 +1,100 @@
+<html>
+<head>
+    <meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="with=device-width,initial-scale=1">
+    <title>校园实验设备设备管理系统</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+<style>
+    .mylogin{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    /*设置panel属性*/
+    .panel-body{
+        height: 280px;
+        margin-top: 20px;
+    }
+    .panel {
+        /*设置panel属性
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .05);*/
+        width: 700px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>校园实验设备借用系统</h1>
+    </div>
+    <div class="container mylogin" >
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="font-size: 20px">
+                用户登录
+            </div>
+            <div class="panel-body" >
+                <form role="form" class="form-horizontal" style="width: 600px">
+                    <div class="form-group" style="font-size: 20px">
+                        <label class="col-md-4 control-label">学工号</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control input-lg">
+                        </div>
+                    </div>
+                    <div class="form-group" style="font-size: 20px">
+                        <label class="col-md-4 control-label">密码</label>
+                        <div class="col-md-6">
+                            <input type="password" class="form-control input-lg" >
+                        </div>
+                    </div>
+                    <div class="form-group" style="font-size: 15px">
+                        <div class="checkbox col-md-offset-4 col-md-4">
+                            <label>
+                                <input type="checkbox" value="">
+                                记住密码
+                            </label>
+                        </div>
+                        <div class= "col-md-3" style="font-size: 15px">
+                            <a href="#">忘记密码？</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-5 col-md-4">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.md5.js"></script>
+<script type="text/javascript">
+    alert($.md5("www.jb51.net"));
+</script>
+<script>
+    function form_submit(){
+        var username=$("#username") .val();
+        var password=$(" #password").val();
+        var remember=document. getElementById( "remember1") . checked;
+        if(password. trim() . length<32){
+            password=hex_ md5(username +hex_ md5(pas sword));
+        }
+        $(" #password"). val(password);
+        SetCookie("userName" ,username, 24*7,"/");
+        if( remember){
+            SetCookie(username , password,24*7,"/");
+        }else{
+            SetCookie(username,"",0,"/");
+        }
+        $(" #login_ form") . submit();
+    }
+    http://blog. csdn. net/hewl
+
+</script>
+</body>
+</html>

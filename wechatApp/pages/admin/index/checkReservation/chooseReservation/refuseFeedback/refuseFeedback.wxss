@@ -1,0 +1,47 @@
+.main textarea {
+    width: 80%;
+    border: 1rpx solid black;
+    font-size: 32rpx;
+}
+
+.main_view1 {
+    font-size: 38rpx;
+    margin-left: 40rpx
+}
+
+.main_view2 {
+    font-size: 35rpx;
+    margin-left: 40rpx;
+    margin-bottom: 20rpx;
+    color: #222;
+}
+
+.comment {
+    height: 200rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.comment textarea {
+    width: 90%;
+    background-color: rgba(244, 244, 244, 0.8);
+    padding: 15rpx;
+    font-size: 32rpx;
+}
+
+.submit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit button {
+    width: 90%;
+    color: white;
+    background-color: #89afd4;
+    margin: 10rpx;
+    font-size: 38rpx;
+}

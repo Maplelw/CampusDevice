@@ -1,0 +1,18 @@
+<view class="top">
+
+</view>
+<view class="main">
+    <view class="main_view1">请填写拒绝原因</view>
+    <view class="main_view2">(我们会将它反馈给申请人)</view>
+</view>
+
+<!-- 评价内容框 -->
+<view class="comment">
+    <textarea maxlength="80" placeholder="请填写拒绝的理由" bindinput="getInput"></textarea>
+</view>
+
+<!-- 提交 -->
+<view class="submit">
+    <button wx:if="{{message == ''}}" disabled="true" bindtap="sendMessage">提交</button>
+    <button wx:else bindtap="sendMessage">提交</button>
+</view>

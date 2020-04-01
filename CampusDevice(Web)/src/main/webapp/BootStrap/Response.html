@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--嵌入式 16:9-->
+        <!--
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="login.html"></iframe>
+        </div>
+        <div class="well well-lg">
+            Look,I'm in a well.
+        </div>-->
+        <nav>
+            <ul class="pagination pagination-lg" id="mytab">
+                <!--向前-->
+                <li><a href="#">&laquo;</a> </li>
+                <li class="active"><a href="#">1</a> </li>
+                <li><a href="#">2</a> </li>
+                <li><a href="#">3</a> </li>
+                <li><a href="#">4</a> </li>
+                <!--向右-->
+                <li><a href="#">&raquo;</a> </li>
+            </ul>
+        </nav>
+        <ul class="pager">
+            <li><a href="#">上一页</a> </li>
+            <li><a href="#">下一页</a> </li>
+        </ul>
+        <nav>
+            <ul class="pager">
+                <li class="previous"><a href="">&larr;向前</a> </li>
+                <li class="next"><a href="">&rarr;向后</a> </li>
+            </ul>
+        </nav>
+        <span class="label label-danger">默认</span>
+        <h3>这是一个主标题<span class="label label-success">这是关于标题的描述</span> </h3>
+    </div>
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script>
+        //点击事件,点击后显示
+        $("#mytab a").click(function (e) {
+            e.preventDefault();
+            $(this).tab("show");
+        })
+    </script>
+</body>
+</html>

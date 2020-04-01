@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f657043-d5cc-41db-a321-51669511e040" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ProjectId" id="1UF48S0WZ2MG583LwCKc3Mfv8xm" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lite version" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\已妡\Desktop\web\System\lite version" />
+      <recent name="C:\Users\已妡\Desktop\System\lite version" />
+      <recent name="C:\Users\已妡\Desktop\System" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\已妡\Desktop\System\lite version\returnDevice" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.reservationDetails.html">
+    <configuration name="devices.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/System/monster-lite/lite version/devices.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="getFeedback.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/System/monster-lite/lite version/getFeedback.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="personalData.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/System/monster-lite/lite version/personalData.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reservationDetails.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/System/monster-lite/lite version/reservationDetails.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/System/monster-lite/lite version/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.reservationDetails.html" />
+        <item itemvalue="JavaScript Debug.devices.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="JavaScript Debug.personalData.html" />
+        <item itemvalue="JavaScript Debug.getFeedback.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f657043-d5cc-41db-a321-51669511e040" name="Default Changelist" comment="" />
+      <created>1574938850237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574938850237</updated>
+      <workItem from="1574938853924" duration="460000" />
+      <workItem from="1574939533617" duration="9214000" />
+      <workItem from="1575006206070" duration="6238000" />
+      <workItem from="1575012579488" duration="1933000" />
+      <workItem from="1575016559474" duration="822000" />
+      <workItem from="1575017415535" duration="1309000" />
+      <workItem from="1575019069277" duration="928000" />
+      <workItem from="1575093672074" duration="73000" />
+      <workItem from="1575093798726" duration="11582000" />
+      <workItem from="1575113464668" duration="3972000" />
+      <workItem from="1575118503764" duration="156000" />
+      <workItem from="1575118841039" duration="134000" />
+      <workItem from="1575119004277" duration="35000" />
+      <workItem from="1575187550667" duration="48000" />
+      <workItem from="1575195980131" duration="57000" />
+      <workItem from="1575267516376" duration="41000" />
+      <workItem from="1575362364646" duration="284000" />
+      <workItem from="1575362698989" duration="4687000" />
+      <workItem from="1575369392730" duration="5315000" />
+      <workItem from="1575426720885" duration="4018000" />
+      <workItem from="1575437315790" duration="16440000" />
+      <workItem from="1575512249269" duration="3957000" />
+      <workItem from="1575698149446" duration="15974000" />
+      <workItem from="1575860395001" duration="5761000" />
+      <workItem from="1575883688020" duration="97000" />
+      <workItem from="1575883926040" duration="488000" />
+      <workItem from="1575974776253" duration="4504000" />
+      <workItem from="1575979431144" duration="801000" />
+      <workItem from="1575986377748" duration="11257000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

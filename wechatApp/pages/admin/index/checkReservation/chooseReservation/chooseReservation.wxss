@@ -1,0 +1,184 @@
+page {
+    background-color: rgba(244, 244, 244,1)
+}
+/* 设备信息 */
+.device {
+    display: flex;
+    margin-bottom: 25rpx;
+    padding-bottom: 15rpx;
+    background-color: white;
+}
+
+.device .img {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.device .img image {
+    width: 120rpx;
+    height: 100rpx;
+   
+}
+
+.device_info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 具体申请信息 */
+.all {
+    margin-bottom: 25rpx;
+    padding-bottom: 20rpx;
+    background-color: white;
+}
+
+.all .top {
+    padding: 20rpx;
+    border-bottom: 4rpx solid #eeee;
+
+}
+
+.all .top text {
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}
+
+.all .top .ing {
+    color: #aaa;
+    float:right;
+    line-height: 52rpx;
+}
+
+.all .top .discuss {
+    color: red;
+    float:right;
+    line-height: 52rpx;
+}
+
+.all .top .success {
+    color: #89AFD4;
+    float: right;
+    line-height: 52rpx;
+}
+
+.all .top .fail {
+    color: red;
+    float: right;
+    line-height: 52rpx;
+}
+
+.all .top .cancelReserve {
+    color: #aaa;
+    float: right;
+    line-height: 52rpx;
+}
+
+.all .feedback text {
+    font-size: 32rpx;
+    color: #89afd4;
+    margin-left: 40rpx; 
+}
+
+/* 申请人 */
+.all .application {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20rpx;
+}
+
+.all .application .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550rpx;
+}
+
+.all .application .info text {
+    font-size:32rpx;
+    color: #5e5e5e;
+    margin: 5rpx;
+}
+
+.all .application  .credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(18, 150, 219, 1)
+}
+
+.all .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30rpx;
+    /* border-bottom: 25rpx solid #eee; */
+}
+
+.all .buttons text {
+    font-size: 30rpx;
+    margin-right: 20rpx;
+    padding: 12rpx;
+}
+
+/* 弹窗 */
+.window {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window .windowContent {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.window .windowContent textarea{
+    margin: 40rpx auto;
+    width: 80%;
+    height: 200rpx;
+    background-color: rgba(244, 244, 244, 0.8);
+    padding: 20rpx;
+    font-size: 35rpx;
+}
+
+.window .windowContent .borrow {
+    border-bottom: 1rpx solid #e6e6e6;
+    display: flex;
+    font-size: 40rpx;
+    font-weight: 500;
+    padding: 20rpx 0;
+}
+
+.window .windowContent .borrow text {
+    margin-left: 40rpx;
+}
+
+.window .windowContent .borrow .pickTime text {
+    color: #aaa;
+    margin-left: 50rpx;
+    font-size: 35rpx;
+}
+
+.window .windowContent .buttons2 {
+    display: flex;
+    justify-content: center;
+    padding: 20rpx 0;
+}
+
+.window .windowContent .buttons2 button {
+    width: 200rpx;
+    height: 80rpx;
+    font-size: 35rpx;
+}

@@ -1,0 +1,111 @@
+/* 头部选项 */
+.top {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 20rpx;
+}
+
+.top text {
+    margin: 0 50rpx;
+    color: #aaaaaa;
+    font-size: 35rpx;
+}
+
+.device {
+    display: flex;
+    border-bottom: 2rpx solid #eeeeee;
+    padding: 15rpx;
+    align-items: center;
+}
+
+.device .rank {
+    width: 55rpx;
+    height: 55rpx;
+    background-color: rgba(170,170,170,0.8);
+    font-size: 30rpx;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20rpx;
+    border-radius: 15%;
+}
+
+.device_info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.device .img {
+    width: 200rpx;
+    display: flex;
+    height: 120rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.device image {
+    width: 120rpx;
+    height: 100rpx;
+}
+
+/* 搜索框 */
+.searchTop {
+    height: 80rpx;
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search {
+    padding-left: 20rpx;
+    font-size: 35rpx;
+    display: flex;
+    align-items: center;  
+}
+
+.search image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 20rpx;
+}
+
+.search text {
+    width: 400rpx;
+    color: #888
+}
+
+/* 底部导航 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 750rpx;
+    background-color: #ffffff;  
+    border-top: 2rpx solid #cccccc;
+    padding-top: 20rpx;
+}
+
+.footer .box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer image {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.footer .choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100rpx;
+    font-size: 30rpx;
+}

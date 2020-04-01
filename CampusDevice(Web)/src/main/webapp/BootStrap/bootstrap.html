@@ -1,0 +1,49 @@
+<html>
+<head>
+    <!--通过meta标签设置编码，页面根据设备大小调整、不缩放-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width,initial-scale=1">
+    <title>校园实验设备设备管理系统</title>
+    <!--引用bootstrap -->
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <style>
+        body{
+            /*--属性定义元素边框与元素内容之间的空间*/
+            padding-top:50px;
+        }
+        .starter{
+            padding:40px 15px;  /*--上下、左右距离--*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--导航标签 默认样式 -inverse：黑色 位置在顶部-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!--容器-->
+    <div class="container">
+        <!--承载当前navbar的头部分-->
+        <div class="navbar-header">
+            <!--跳转到当前页面-->
+            <a href="#" class="navbar-brand">校园实验设备设备管理系统</a>
+        </div>
+        <!--.collapse——设置div元素为视口大于768px时显示；
+        .navbar-collapse——设置div元素为导航条组件各列表项的父元素；-->
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <!--active:默认选中-->
+                <li class="active"><a href="#">个人资料</a></li>
+                <li><a href="#">设备资料</a></li>
+                <li><a href="#">待归还设备</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="starter">
+        <h1>校园实验设备借用项目</h1>
+        <p class="leader">登陆成功！欢迎使用校园设备借用系统。</p>
+    </div>
+</div>
+</body>
+</html>

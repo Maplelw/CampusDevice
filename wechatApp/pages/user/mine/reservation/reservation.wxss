@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 25rpx solid #eee;
+    border-top: 4rpx solid rgb(244, 244, 244);
+}
+
+.header text {
+    margin: 0 50rpx;
+    color: #aaa;
+}
+
+.all {
+    border-bottom: 25rpx solid rgb(244, 244, 244);
+    padding-bottom: 20rpx;
+}
+
+.top {
+    padding: 20rpx;
+    border-bottom: 2rpx solid #eee;
+
+}
+
+.top text {
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}
+
+.top .ing {
+    color: #aaa;
+    float:right;
+    line-height: 52rpx;
+}
+
+.top .discuss {
+    color: red;
+    float:right;
+    line-height: 52rpx;
+}
+
+.top .success {
+    color: #89AFD4;
+    float: right;
+    line-height: 52rpx;
+}
+
+.top .fail {
+    color: red;
+    float: right;
+    line-height: 52rpx;
+}
+
+.top .cancelReserve {
+    color: #aaa;
+    float: right;
+    line-height: 52rpx;
+}
+
+.down {
+    padding: 20rpx 40rpx 10rpx 40rpx;
+}
+
+.down text {
+    font-size: 32rpx;
+    color: #aaa;
+    margin: 5rpx;
+}
+
+.cancel {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20rpx;
+}
+
+.cancel text {
+    font-size: 30rpx;
+    color: #89afd4;
+    border: 2rpx solid #89afd4;
+    padding: 12rpx;
+    margin-left: 20rpx;
+    
+}
+
+.feedback text {
+    font-size: 32rpx;
+    color: #89afd4;
+    margin-left: 40rpx; 
+}
