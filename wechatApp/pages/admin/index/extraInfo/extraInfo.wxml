@@ -1,0 +1,59 @@
+<!-- 头部选项 -->
+<view class="header">
+    <text bindtap="toIng" style="color:{{ingColor}}">正在借用</text>
+    <text bindtap="toDone" style="color:{{doneColor}}">已完成</text>
+    <image src="/img/admin/add.png" bindtap="add"></image>
+</view>
+<!-- 正在借用 -->
+<view wx:if="{{choice === 'ing'}}">
+    <view class="all" wx:for="{{extraIng}}" wx:key="{{index}}">
+        <view style="border-bottom: 25rpx solid rgb(244, 244, 244);padding-bottom: 20rpx;">
+            <view class="top">
+                <view>
+                    <text>借用日期:</text>
+                    <text>{{item.b_borrowDate}}</text>
+                    <text class="ing">正在借用</text>
+                </view>
+            </view>
+            <view class="down">
+                <view>{{item.d_name}}({{item.d_no}})</view>
+                <view>
+                    <text>借用人:</text>
+                    <text>{{item.ei_name}}</text>
+                </view>
+                <view>
+                    <text>附加信息:</text>
+                    <text>{{item.ei_info}}</text>
+                </view>
+            </view>
+            <view class="confirm">
+                <text bindtap="confirmReturn" data-index="{{index}}">确认归还</text>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 已完成 -->
+<view wx:else>
+    <view class="all" wx:for="{{extraDone}}" wx:key="{{index}}">
+        <view style="border-bottom: 25rpx solid rgb(244, 244, 244); padding-bottom: 20rpx;">
+            <view class="top">
+                <view>
+                    <text>借用日期:</text>
+                    <text>{{item.b_borrowDate}}</text>
+                    <text class="done">已归还</text>
+                </view>
+            </view>
+            <view class="down">
+                <view>{{item.d_name}}({{item.d_no}})</view>
+                <view>
+                    <text>借用人:</text>
+                    <text>{{item.ei_name}}</text>
+                </view>
+                <view>
+                    <text>附加信息:</text>
+                    <text>{{item.ei_info}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

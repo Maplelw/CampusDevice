@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rpx 0;
+    border-bottom: 25rpx solid #eee;
+    border-top: 4rpx solid rgb(244, 244, 244);
+}
+
+.header text {
+    margin: 0 50rpx;
+    color: #aaa;
+}
+
+.header image {
+    width: 55rpx;
+    height: 55rpx;
+}
+
+.top {
+    padding: 20rpx;
+    border-bottom: 2rpx solid #eee;
+}
+
+.top text {
+    font-size: 32rpx;
+    margin-right: 10rpx;
+}
+
+.top .ing {
+    color: #89afd4;
+    float: right;
+    line-height: 52rpx;
+}
+
+.top .done {
+    color: #aaa;
+    float: right;
+    line-height: 52rpx;
+}
+
+.down {
+    padding: 20rpx 40rpx 10rpx 40rpx;
+}
+
+.down text {
+    font-size: 32rpx;
+    color: #aaa;
+    margin: 5rpx;
+}
+
+.confirm {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20rpx;
+}
+
+.confirm text {
+    font-size: 30rpx;
+    color: #89afd4;
+    border: 4rpx solid #89afd4;
+    padding: 12rpx 25rpx;
+}
+

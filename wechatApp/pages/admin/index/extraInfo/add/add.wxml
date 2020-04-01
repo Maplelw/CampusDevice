@@ -1,0 +1,17 @@
+<form bindsubmit="submit">
+    <view class="inputs">
+        <text>设备编号</text>
+        <input maxlength="20" type="text" placeholder="请填写设备编号" placeholder-class="placeholder" name="d_no"></input>
+    </view>
+    <view class="inputs">
+        <text>借用人姓名</text>
+        <input maxlength="20" type="text" placeholder="请填写借用人姓名" name="ei_name"></input>
+    </view>
+    <view class="area">
+        <text>备注信息</text>
+        <textarea maxlength="200" name="ei_info" placeholder="填写需要记录的东西（例如：原因等）可不填"></textarea>
+    </view>  
+    <view class="bottom">
+        <button form-type="submit">提交</button>
+    </view>
+</form>
